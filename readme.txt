@@ -17,5 +17,9 @@ androidx.drawerlayout.widget.DrawerLayout
 4、悬浮按钮FloatingActionButton
 5、snackbar
 并不是toast的替代品，在提示中加入一个可交互按钮，譬如删除操作加undo，提供用户一种弥补措施
-问题：snackbar把悬浮按钮遮住了怎么办？借助CoordinatorLayout
+问题：snackbar把悬浮按钮遮住了怎么办？借助CoordinatorLayout（见下面）
+6、CoordinatorLayout
+加强版的FrameLayout+一些material效果
+将fragment替换成CoordinatorLayout以后，snackbar弹出时不再覆盖FloatingActionButton了，因为
+CoordinatorLayout可以监听所有子控件的各种事件,snackbar不是它的子控件，但是点击事件时会传入父亲view，就是FloatingActionButton
 
