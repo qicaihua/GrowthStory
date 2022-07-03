@@ -33,3 +33,6 @@ CoordinatorLayout可以监听所有子控件的各种事件,snackbar不是它的
 CollapsingToolbarLayout
 1）不能独立存在，只能为AppBarLayout的直接子布局
 2）而AppBarLayout又必须是CoordinatorLayout的子布局
+11、充分利用系统状态栏空间
+让背景图和系统状态栏融合，借助android:fitSystemWindows实现+状态栏透明主题
+表示该控件会出现在系统状态栏里
