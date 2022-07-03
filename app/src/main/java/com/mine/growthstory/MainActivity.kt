@@ -6,10 +6,27 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.materialtest.FruitAdapter
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val fruits = mutableListOf(Fruit("Apple",R.mipmap.apple),
+        Fruit("Banana",R.mipmap.banana),
+        Fruit("Orange",R.mipmap.orange),
+        Fruit("Watermelon",R.mipmap.watermelon),
+        Fruit("Pear",R.mipmap.pear),
+        Fruit("Grape",R.mipmap.grape),
+        Fruit("PineApple",R.mipmap.pineapple),
+        Fruit("Strawberry",R.mipmap.strawberry),
+        Fruit("Cherry",R.mipmap.cherry),
+        Fruit("Mango",R.mipmap.mango)
+    )
+
+    val fruitList = ArrayList<Fruit>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,6 +56,13 @@ class MainActivity : AppCompatActivity() {
                 }
                 .show()
         }
+
+        //展示水果卡片列表
+        initFruits()
+        val layoutManager = GridLayoutManager(this,2)
+        recycleView.layoutManager = layoutManager
+        val adapter = FruitAdapter(this,fruitList)
+        recycleView.adapter = adapter
     }
 
     /**
@@ -58,5 +82,13 @@ class MainActivity : AppCompatActivity() {
             android.R.id.home -> drawerLayout.openDrawer(GravityCompat.START)
         }
         return true
+    }
+
+    private fun initFruits(){
+        fruitList.clear()
+        repeat(20){
+            val index = (0 until fruits.size).random()
+            fruitList.add(fruits[index])
+        }
     }
 }

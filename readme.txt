@@ -22,4 +22,6 @@ androidx.drawerlayout.widget.DrawerLayout
 加强版的FrameLayout+一些material效果
 将fragment替换成CoordinatorLayout以后，snackbar弹出时不再覆盖FloatingActionButton了，因为
 CoordinatorLayout可以监听所有子控件的各种事件,snackbar不是它的子控件，但是点击事件时会传入父亲view，就是FloatingActionButton
-
+7、卡片列表
+问题：recyclerview向上滑动以后TooBar不见了，被列表挡住了，如何解决？
+需要借助AppBarLayout
