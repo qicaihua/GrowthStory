@@ -14,4 +14,6 @@ androidx.drawerlayout.widget.DrawerLayout
 需要准备两个东西:menu(菜单项)和headerLayout(头布局)
 菜单项注意点：menu中嵌套group标签，group属性 checkableBehavior指定为single，表示组中所有菜单项只能单选
 
+4、悬浮按钮FloatingActionButton
+
 
