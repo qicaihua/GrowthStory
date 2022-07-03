@@ -2,7 +2,6 @@ package com.mine.growthstory
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -24,7 +23,13 @@ class MainActivity : AppCompatActivity() {
             it.setHomeAsUpIndicator(R.mipmap.ic_menu)
         }
 
-
+        //导航滑动菜单默认选中call
+        navView.setCheckedItem(R.id.navCall)
+        //导航滑动菜单设置点击事件
+        navView.setNavigationItemSelectedListener {
+            drawerLayout?.closeDrawers()
+            true
+        }
     }
 
     /**
@@ -41,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             R.id.delete -> Toast.makeText(this, "You clicked Delete", Toast.LENGTH_SHORT).show()
             R.id.settings -> Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show()
             //点击home菜单，打开抽屉菜单，从左边滑动到右边；行为和xml保持一致，设置GravityCompat.START
-            android.R.id.home -> drawer_layout.openDrawer(GravityCompat.START)
+            android.R.id.home -> drawerLayout.openDrawer(GravityCompat.START)
         }
         return true
     }

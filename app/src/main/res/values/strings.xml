@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">GrowthStory</string>
     <string name="title_name">Fruits</string>
+    <string name="menu_call">Call</string>
+    <string name="menu_friends">Friends</string>
+    <string name="menu_Location">Location</string>
+    <string name="menu_Mail">Mail</string>
+    <string name="menu_Tasks">Tasks</string>
 </resources>
