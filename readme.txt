@@ -15,5 +15,7 @@ androidx.drawerlayout.widget.DrawerLayout
 菜单项注意点：menu中嵌套group标签，group属性 checkableBehavior指定为single，表示组中所有菜单项只能单选
 
 4、悬浮按钮FloatingActionButton
-
+5、snackbar
+并不是toast的替代品，在提示中加入一个可交互按钮，譬如删除操作加undo，提供用户一种弥补措施
+问题：snackbar把悬浮按钮遮住了怎么办？借助CoordinatorLayout
 

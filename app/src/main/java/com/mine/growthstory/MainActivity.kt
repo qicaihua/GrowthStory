@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,8 +32,12 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        fab.setOnClickListener{
-            Toast.makeText(this,"FAB clicked",Toast.LENGTH_SHORT).show()
+        fab.setOnClickListener {
+            Snackbar.make(it, "Data deleted", Snackbar.LENGTH_SHORT)
+                .setAction("Undo") {
+                    Toast.makeText(this, "Data restored", Toast.LENGTH_SHORT).show()
+                }
+                .show()
         }
     }
 
