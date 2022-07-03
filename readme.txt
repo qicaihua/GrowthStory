@@ -25,3 +25,6 @@ CoordinatorLayout可以监听所有子控件的各种事件,snackbar不是它的
 7、卡片列表
 问题：recyclerview向上滑动以后TooBar不见了，被列表挡住了，如何解决？
 需要借助AppBarLayout
+8、AppBarLayout
+垂直方向的LinearLayout，内部做了很多滚动事件的封装
+怎么解决遮挡问题呢？只需要两步：1.ToolBar嵌套到AppBarlayout中，2.给recyclerview制定一个布局行为
