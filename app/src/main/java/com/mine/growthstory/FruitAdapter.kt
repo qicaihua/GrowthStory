@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mine.growthstory.Fruit
+import com.mine.growthstory.FruitDetailActivity
 import com.mine.growthstory.R
 
 class FruitAdapter(val context: Context, val fruitList: List<Fruit>) : RecyclerView.Adapter<FruitAdapter.ViewHolder>() {
@@ -23,13 +24,13 @@ class FruitAdapter(val context: Context, val fruitList: List<Fruit>) : RecyclerV
         val view = LayoutInflater.from(context).inflate(R.layout.fruit_item, parent, false)
         val holder = ViewHolder(view)
         holder.itemView.setOnClickListener {
-//            val position = holder.adapterPosition
-//            val fruit = fruitList[position]
-//            val intent = Intent(context, FruitActivity::class.java).apply {
-//                putExtra(FruitActivity.FRUIT_NAME, fruit.name)
-//                putExtra(FruitActivity.FRUIT_IMAGE_ID, fruit.imageId)
-//            }
-//            context.startActivity(intent)
+            val position = holder.adapterPosition
+            val fruit = fruitList[position]
+            val intent = Intent(context, FruitDetailActivity::class.java).apply {
+                putExtra(FruitDetailActivity.FRUIT_NAME, fruit.name)
+                putExtra(FruitDetailActivity.FRUIT_IMAGE_ID, fruit.imageId)
+            }
+            context.startActivity(intent)
         }
         return holder
     }

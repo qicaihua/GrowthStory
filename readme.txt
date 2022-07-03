@@ -28,3 +28,8 @@ CoordinatorLayout可以监听所有子控件的各种事件,snackbar不是它的
 8、AppBarLayout
 垂直方向的LinearLayout，内部做了很多滚动事件的封装
 怎么解决遮挡问题呢？只需要两步：1.ToolBar嵌套到AppBarlayout中，2.给recyclerview制定一个布局行为
+9、下拉刷新
+10、可折叠式标题栏
+CollapsingToolbarLayout
+1）不能独立存在，只能为AppBarLayout的直接子布局
+2）而AppBarLayout又必须是CoordinatorLayout的子布局
