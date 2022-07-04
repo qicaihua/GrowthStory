@@ -1,4 +1,4 @@
-package com.example.materialtest
+package com.mine.growthstory.slidemenu
 
 import android.content.Context
 import android.content.Intent
@@ -9,8 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mine.growthstory.Fruit
-import com.mine.growthstory.FruitDetailActivity
 import com.mine.growthstory.R
 
 class FruitAdapter(val context: Context, val fruitList: List<Fruit>) : RecyclerView.Adapter<FruitAdapter.ViewHolder>() {

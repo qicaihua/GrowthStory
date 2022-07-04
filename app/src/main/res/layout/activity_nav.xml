@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#08000000"
+        app:selectionRequired="false"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tab1"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tab1"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@mipmap/ic_nav_home"
+            app:iconGravity="textTop"
+            app:iconTint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tab2"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tab2"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@mipmap/ic_nav_fruit"
+            app:iconGravity="textTop"
+            app:iconTint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tab3"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tab3"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@mipmap/ic_nav_mine"
+            app:iconGravity="textTop"
+            app:iconTint="@color/black" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+</LinearLayout>

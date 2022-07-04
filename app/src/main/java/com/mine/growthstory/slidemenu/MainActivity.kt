@@ -1,4 +1,4 @@
-package com.mine.growthstory
+package com.mine.growthstory.slidemenu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,23 +7,27 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.materialtest.FruitAdapter
 import com.google.android.material.snackbar.Snackbar
+import com.mine.growthstory.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.thread
 
+/**
+ * 带左滑抽屉的主页
+ */
 class MainActivity : AppCompatActivity() {
 
-    val fruits = mutableListOf(Fruit("Apple",R.mipmap.apple),
-        Fruit("Banana",R.mipmap.banana),
-        Fruit("Orange",R.mipmap.orange),
-        Fruit("Watermelon",R.mipmap.watermelon),
-        Fruit("Pear",R.mipmap.pear),
-        Fruit("Grape",R.mipmap.grape),
-        Fruit("PineApple",R.mipmap.pineapple),
-        Fruit("Strawberry",R.mipmap.strawberry),
-        Fruit("Cherry",R.mipmap.cherry),
-        Fruit("Mango",R.mipmap.mango)
+    val fruits = mutableListOf(
+        Fruit("Apple", R.mipmap.apple),
+        Fruit("Banana", R.mipmap.banana),
+        Fruit("Orange", R.mipmap.orange),
+        Fruit("Watermelon", R.mipmap.watermelon),
+        Fruit("Pear", R.mipmap.pear),
+        Fruit("Grape", R.mipmap.grape),
+        Fruit("PineApple", R.mipmap.pineapple),
+        Fruit("Strawberry", R.mipmap.strawberry),
+        Fruit("Cherry", R.mipmap.cherry),
+        Fruit("Mango", R.mipmap.mango)
     )
 
     val fruitList = ArrayList<Fruit>()
