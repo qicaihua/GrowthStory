@@ -6,4 +6,10 @@
     <string name="menu_Location">Location</string>
     <string name="menu_Mail">Mail</string>
     <string name="menu_Tasks">Tasks</string>
+
+    <string name="cancel">取消</string>
+    <string name="apply">确认</string>
+    <string name="user_change_background_free">推荐</string>
+    <string name="user_change_background_vip">上传</string>
+
 </resources>

@@ -10,4 +10,8 @@
 
     <color name="colorPrimary">@color/teal_200</color>
     <color name="colorPrimaryDark">@color/teal_700</color>
+
+    <color name="common_day_ff000000">#ff000000</color>
+    <color name="common_day_333333">#ff333333</color>
+    <color name="common_day_ff069a72">#ff069a72</color>
 </resources>

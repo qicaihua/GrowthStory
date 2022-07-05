@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.mine.growthstory.selectBg.ChooseBackgroundActivity
 
 /**
  * 其他Fragment,暂时显示基本文字
@@ -43,6 +44,9 @@ class OtherFragment: Fragment() {
 
         val textview:TextView = view as TextView
         textview.text = "${arguments?.getString("tab")}"
+        textview.setOnClickListener{
+            ChooseBackgroundActivity.start(requireActivity(),"https://sm.ms/image/3VWdkFmEU1RDugO")
+        }
         Log.d("OtherFragment","onViewCreated--" + textview.text)
     }
 

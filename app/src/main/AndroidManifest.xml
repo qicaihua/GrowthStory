@@ -35,6 +35,8 @@
         <activity
             android:name=".slidemenu.FruitDetailActivity"
             android:theme="@style/FruitActivityTheme" />
+        <activity
+            android:name=".selectBg.ChooseBackgroundActivity" />
     </application>
 
 </manifest>
