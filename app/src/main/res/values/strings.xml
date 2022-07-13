@@ -12,4 +12,12 @@
     <string name="user_change_background_free">推荐</string>
     <string name="user_change_background_vip">上传</string>
 
+    <string name="redesign_edit_tags_title">添加标签</string>
+    <string name="redesign_edit_tags_subtitle">输入添加新标签</string>
+    <string name="invalid_tag_length">标签长度必须在1到100字符之间。</string>
+    <string name="invalid_tag_name">无效的标签名称。</string>
+    <string name="too_many_tags_on_note">一条笔记最多可添加 100 个标签。</string>
+    <string name="tag_dne">只有笔记的所有者可以创建标签。</string>
+    <string name="puck_x">x</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.mine.growthstory.navMenu
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.button.MaterialButton
 import com.mine.growthstory.R
+import com.mine.growthstory.addTags.TagEditActivity
 import kotlinx.android.synthetic.main.activity_nav.*
 
 /**
@@ -63,13 +65,16 @@ class NavMainActivity : AppCompatActivity(){
                 showFragment(mTabHomeFragment!!)
             }
             TAB_FRUIT->{
-                if( mTabFruitFragment== null){
-                    mTabFruitFragment = OtherFragment()
-                    val bundle = Bundle()
-                    bundle.putString("tab","fruit")
-                    mTabHomeFragment!!.arguments = bundle
-                }
-                showFragment(mTabFruitFragment!!)
+                startActivity(Intent(this, TagEditActivity::class.java))
+
+
+//                if( mTabFruitFragment== null){
+//                    mTabFruitFragment = OtherFragment()
+//                    val bundle = Bundle()
+//                    bundle.putString("tab","fruit")
+//                    mTabHomeFragment!!.arguments = bundle
+//                }
+//                showFragment(mTabFruitFragment!!)
             }
             TAB_MINE->{
                 if(mTabMineFragment == null){

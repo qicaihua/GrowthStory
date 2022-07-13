@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StretchView">
+        <attr name="maxWidth" />
+        <attr name="maxHeight" />
+        <attr name="splitHintFontStart" format="integer" />
+        <attr name="splitHintFontEnd" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WrapLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="alignRowBottom" format="boolean" />
+    </declare-styleable>
+
+    <attr name="typePrimary" format="reference|color"/>
+    <attr name="editorCursor" format="reference"/>
+</resources>

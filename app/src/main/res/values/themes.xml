@@ -24,4 +24,60 @@
     <style name="FruitActivityTheme" parent="AppTheme">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="smart_bubble_text" parent="android:TextAppearance">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#00BF66</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="bubble_text_contact_new" parent="android:TextAppearance">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">?typePrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="bubble_text_contact" parent="android:TextAppearance">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/common_day_4d4d4d_1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="bubble_text_add" parent="android:TextAppearance">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/common_day_ffffffff_12</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <declare-styleable name="BubbleField">
+        <attr name="maxWidth" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+        <attr name="editable" format="boolean" />
+    </declare-styleable>
+
+    <style name="bubble_text" parent="android:TextAppearance">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
 </resources>

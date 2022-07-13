@@ -37,6 +37,8 @@
             android:theme="@style/FruitActivityTheme" />
         <activity
             android:name=".selectBg.ChooseBackgroundActivity" />
+        <activity
+            android:name=".addTags.TagEditActivity" />
     </application>
 
 </manifest>

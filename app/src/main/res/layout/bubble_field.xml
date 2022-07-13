@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/top_layout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<com.mine.growthstory.addTags.bubblefield.StretchScrollView
+		android:id="@+id/bubble_field_scroll_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fillViewport="true"
+		android:fadingEdge="none"
+		android:overScrollMode="never"
+		app:maxHeight="78dp">
+
+		<com.mine.growthstory.addTags.bubblefield.WrapLayout
+			android:id="@+id/wrap_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			app:alignRowBottom="true"
+			app:horizontalSpacing="8dip"
+			android:layout_marginBottom="8dp"
+			app:verticalSpacing="4dip"
+			tools:ignore="MissingClass">
+
+			<com.mine.growthstory.addTags.bubblefield.BackspaceEditText
+				android:id="@+id/bubble_field_edit_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColorHint="@color/gray_d9"
+				android:minWidth="30dip"
+				android:textSize="16sp"
+				android:inputType="text"
+				android:background="@null"
+				android:textColor="@color/black"
+				android:textCursorDrawable="@drawable/editor_cursor_day_night"
+				android:dropDownAnchor="@id/top_layout"
+				android:imeOptions="actionNext|flagNoExtractUi"
+				android:maxLength="100"
+				android:completionThreshold="1"
+				tools:ignore="MissingClass" />
+		</com.mine.growthstory.addTags.bubblefield.WrapLayout>
+	</com.mine.growthstory.addTags.bubblefield.StretchScrollView>
+</LinearLayout>
+	
