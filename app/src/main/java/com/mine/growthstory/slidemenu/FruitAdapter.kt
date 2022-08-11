@@ -36,7 +36,7 @@ class FruitAdapter(val context: Context, val fruitList: List<Fruit>) : RecyclerV
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val fruit = fruitList[position]
         holder.fruitName.text = fruit.name
-        Glide.with(context).load(fruit.imageId).into(holder.fruitImage);
+        Glide.with(context).load(fruit.imageId).into(holder.fruitImage)
     }
 
     override fun getItemCount() = fruitList.size

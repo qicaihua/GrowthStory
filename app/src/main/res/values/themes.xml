@@ -80,4 +80,9 @@
         <item name="android:singleLine">true</item>
         <item name="android:maxLines">1</item>
     </style>
+
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/tranlate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_dialog_out</item>
+    </style>
 </resources>
